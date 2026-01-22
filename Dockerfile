@@ -2,7 +2,7 @@
 FROM python:3.13-slim
 
 # Instala dependência do sistema para o Tesseract OCR
-RUN apt-get update && apt-get install -y tesseract-ocr libtesseract-dev && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y tesseract-ocr libtesseract-dev tesseract-ocr-por && rm -rf /var/lib/apt/lists/*
 
 # Define o diretório de trabalho dentro do container
 WORKDIR /app
