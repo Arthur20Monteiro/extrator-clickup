@@ -1,7 +1,6 @@
 services:
   - type: web
     name: extrator-clickup
-    env: python
-    buildCommand: "pip3 install -r requirements.txt"
-    startCommand: "python3 app.py"
+    env: docker
+    dockerfilePath: ./Dockerfile
     plan: free
